@@ -1,0 +1,27 @@
+﻿@page "/select-date"
+@using MoonCycle.Utils
+@using MoonCycle.Components
+
+<h1>Select Date</h1>
+
+<form onsubmit="@HandleSubmit">
+	<input type="date" @bind-value="selectedDate" />
+	<button type="submit">Submit</button>
+</form>
+
+<MoonPhaseSummary CurrentCount="@currentCount" MoonPhase="@moonPhase" />
+
+@code {
+	private double currentCount;
+	private string moonPhase = "";
+	private DateTime? selectedDate = null;
+
+	private void HandleSubmit()
+	{
+		if(selectedDate.HasValue)
+		{
+			currentCount = MoonphaseUtils.CalculateDaysSinceNewMoon(selectedDate.GetValueOrDefault());
+			moonPhase = MoonphaseUtils.GetMoonPhase(currentCount);
+		}
+	}
+}

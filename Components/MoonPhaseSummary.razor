@@ -1,0 +1,13 @@
+﻿@if (!String.IsNullOrEmpty(MoonPhase))
+{
+	<p><b>Days Into Mooncycle:</b> @CurrentCount.ToString("0.00")</p>
+	<p><b>MoonPhase:</b> @MoonPhase.ToString()</p>
+}
+
+@code {
+	[Parameter]
+	public double CurrentCount { get;  set;}
+
+	[Parameter]
+	public string MoonPhase { get; set; } = "";
+}

@@ -1,0 +1,18 @@
+﻿@page "/"
+@using MoonCycle.Utils
+@using MoonCycle.Components
+
+<h1>Moon Phase Calculator</h1>
+
+<MoonPhaseSummary CurrentCount="@currentCount" MoonPhase="@moonPhase" />
+
+@code {
+	private double currentCount = 0;
+	private string moonPhase = "";
+
+	protected override void OnInitialized()
+	{
+		currentCount = MoonphaseUtils.CalculateDaysSinceNewMoon(DateTime.Now);
+		moonPhase = MoonphaseUtils.GetMoonPhase(currentCount);
+	}
+}
