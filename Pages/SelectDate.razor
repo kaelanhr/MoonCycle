@@ -1,13 +1,12 @@
 ﻿@page "/select-date"
 @using MoonCycle.Utils
 @using MoonCycle.Components
+@using Microsoft.Fast.Components.FluentUI
 
 <h1>Select Date</h1>
 
-<form onsubmit="@HandleSubmit">
-	<input type="date" @bind-value="selectedDate" />
-	<button type="submit">Submit</button>
-</form>
+<input type="date" @bind-value="selectedDate" />
+<FluentButton Appearance="@Appearance.Accent" onclick="@HandleSubmit">Submit</FluentButton>
 
 <MoonPhaseSummary CurrentCount="@currentCount" MoonPhase="@moonPhase" />
 
@@ -18,7 +17,7 @@
 
 	private void HandleSubmit()
 	{
-		if(selectedDate.HasValue)
+		if (selectedDate.HasValue)
 		{
 			currentCount = MoonphaseUtils.CalculateDaysSinceNewMoon(selectedDate.GetValueOrDefault());
 			moonPhase = MoonphaseUtils.GetMoonPhase(currentCount);

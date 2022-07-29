@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="649.5px"
+	 height="649.5px" viewBox="0 0 649.5 649.5" enable-background="new 0 0 649.5 649.5" xml:space="preserve">
+<g id="Layer_2">
+</g>
+<g id="Layer_4" display="none">
+	
+		<image display="inline" overflow="visible" opacity="0.4" width="1200" height="675" xlink:href="moon-phases-explained.png"  transform="matrix(6.2301 0 0 6.2301 -4364.6953 -836.6406)">
+	</image>
+</g>
+<g id="crrescent" display="none">
+	<path display="inline" fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" d="M348.206,6.854
+		c-327.373,313.894-49.567,635.585-8.658,636.302"/>
+	<path display="inline" fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" d="M339.548,643.156
+		c0,351.706-3.874,636.302-8.66,636.302"/>
+</g>
+<g id="gibbous">
+	<g id="XMLID_1_">
+		<g>
+			<path d="M329.51,6.04C503.36,8.58,643.5,150.3,643.5,324.75c0,174.22-139.78,315.8-313.31,318.7
+				C362.23,630.02,662.8,308.05,329.51,6.04z"/>
+			<path fill="#FFFFFF" d="M329.51,6.04c333.29,302.01,32.72,623.979,0.68,637.41h-0.01c-1.81,0.03-3.62,0.05-5.43,0.05
+				C148.71,643.5,6,500.79,6,324.75S148.71,6,324.75,6C326.34,6,327.93,6.01,329.51,6.04z"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" d="M330.18,643.45c-1.81,0.03-3.62,0.05-5.43,0.05
+				C148.71,643.5,6,500.79,6,324.75S148.71,6,324.75,6c1.59,0,3.18,0.01,4.76,0.04C503.36,8.58,643.5,150.3,643.5,324.75
+				c0,174.22-139.78,315.8-313.31,318.7"/>
+			<path fill="none" stroke="#000000" stroke-width="12" stroke-miterlimit="10" d="M329.51,6.04
+				c333.29,302.01,32.72,623.979,0.68,637.41h-0.01"/>
+		</g>
+	</g>
+</g>
+</svg>

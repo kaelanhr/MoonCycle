@@ -37,5 +37,18 @@
 			>= 28.53058770576 and < 29.53058770576 => "New Moon",
 			_ => "Unknown"
 		};
+
+		public static string GetMoonPhaseIcon(string moonphase) => moonphase switch
+		{
+			"New Moon" => "new_moon",
+			"Waxing Crescent" => "waxing_crescent",
+			"First Quarter" => "first_quarter",
+			"Waxing Gibbous" => "waxing_gibbous",
+			"Full Moon" => "full_moon",
+			"Waning Gibbous" => "waning_gibbous",
+			"Last Quarter" => "last_quarter",
+			"Waning Crescent" => "waning_crescent",
+			_ => "Unknown"
+		};
 	}
 }
