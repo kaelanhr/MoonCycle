@@ -11,7 +11,7 @@
 		<EnableDefaultCssItems>false</EnableDefaultCssItems>
 
 		<!-- Display name -->
-		<ApplicationTitle>MoonCycle</ApplicationTitle>
+		<ApplicationTitle>Moon Cycle</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.mooncycle</ApplicationId>
@@ -28,10 +28,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#282c34" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#282c34" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="wwwroot\Images\*" />
