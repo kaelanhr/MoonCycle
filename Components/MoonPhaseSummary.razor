@@ -1,4 +1,6 @@
-﻿@if (!String.IsNullOrEmpty(MoonPhase))
+﻿@using MoonCycle.Enums
+
+@if (MoonPhase != MoonPhase.UNKNOWN)
 {
 	<p><b>Days Into Mooncycle:</b> @CurrentCount.ToString("0.00")</p>
 	<p><b>MoonPhase:</b> @MoonPhase.ToString()</p>
@@ -10,5 +12,5 @@
 	public double CurrentCount { get;  set;}
 
 	[Parameter]
-	public string MoonPhase { get; set; } = "";
+	public MoonPhase MoonPhase { get; set; }
 }

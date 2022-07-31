@@ -1,6 +1,19 @@
 ﻿@page "/docs"
+@using MoonCycle.Components
 @using MoonCycle.Utils
+@using MoonCycle.Enums
 
-<h1>docs</h1>
+<h1>Docs</h1>
 
 <p>Details behind the application</p>
+
+<h2>Moon Phases</h2>
+
+<MoonPhaseTitle MoonPhase="MoonPhase.NEW_MOON" />
+<MoonPhaseTitle MoonPhase="MoonPhase.WAXING_CRESCENT" />
+<MoonPhaseTitle MoonPhase="MoonPhase.FIRST_QUARTER" />
+<MoonPhaseTitle MoonPhase="MoonPhase.WAXING_GIBBOUS" />
+<MoonPhaseTitle MoonPhase="MoonPhase.FULL_MOON" />
+<MoonPhaseTitle MoonPhase="MoonPhase.WANING_GIBBOUS" />
+<MoonPhaseTitle MoonPhase="MoonPhase.LAST_QUARTER" />
+<MoonPhaseTitle MoonPhase="MoonPhase.WANING_CRESCENT" />

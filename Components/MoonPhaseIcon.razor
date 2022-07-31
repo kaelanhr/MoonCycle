@@ -1,12 +1,13 @@
 ﻿@using MoonCycle.Utils
+@using MoonCycle.Enums
 
 <img src="Images/@(MoonIconName).svg" height="100" width="100" />
 
 @code {
 	[Parameter]
-	public string MoonPhase{ get; set; }
+	public MoonPhase MoonPhase{ get; set; }
 
-	public  string MoonIconName{ get; set; } =  "";
+	public string MoonIconName{ get; set; } =  "";
 
 	protected override void OnInitialized()
 	{

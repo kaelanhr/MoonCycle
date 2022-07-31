@@ -1,6 +1,7 @@
 ﻿@page "/select-date"
 @using MoonCycle.Utils
 @using MoonCycle.Components
+@using MoonCycle.Enums
 @using Microsoft.Fast.Components.FluentUI
 
 <h1>Select Date</h1>
@@ -12,7 +13,7 @@
 
 @code {
 	private double currentCount;
-	private string moonPhase = "";
+	private MoonPhase moonPhase = MoonPhase.UNKNOWN;
 	private DateTime? selectedDate = null;
 
 	private void HandleSubmit()

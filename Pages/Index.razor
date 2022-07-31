@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using MoonCycle.Utils
 @using MoonCycle.Components
+@using MoonCycle.Enums
 
 <h1>Moon Phase Calculator</h1>
 
@@ -8,7 +9,7 @@
 
 @code {
 	private double currentCount = 0;
-	private string moonPhase = "";
+	private MoonPhase moonPhase;
 
 	protected override void OnInitialized()
 	{
