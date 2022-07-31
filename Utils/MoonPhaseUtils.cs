@@ -40,6 +40,11 @@ namespace MoonCycle.Utils
 			_ => MoonPhase.UNKNOWN
 		};
 
+		public static MoonPhase GetMoonPhase(DateTime date)
+		{
+			return GetMoonPhase(CalculateDaysSinceNewMoon(date));
+		}
+
 		public static string GetMoonPhaseString(MoonPhase moonPhase) => moonPhase switch
 		{
 			MoonPhase.NEW_MOON  => "New Moon",

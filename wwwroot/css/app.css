@@ -12,10 +12,25 @@ a, .btn-link {
     color: #0071c1;
 }
 
+.moon-phases-list {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.moonphase-title {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
 .btn-primary {
     color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    background-color: #106ebe;
+    border-color: #106ebe;
 }
 
 .content {

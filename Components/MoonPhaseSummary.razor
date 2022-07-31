@@ -1,9 +1,10 @@
 ﻿@using MoonCycle.Enums
+@using MoonCycle.Utils
 
 @if (MoonPhase != MoonPhase.UNKNOWN)
 {
 	<p><b>Days Into Mooncycle:</b> @CurrentCount.ToString("0.00")</p>
-	<p><b>MoonPhase:</b> @MoonPhase.ToString()</p>
+	<p><b>MoonPhase:</b> @MoonphaseUtils.GetMoonPhaseString(@MoonPhase)</p>
 	<MoonPhaseIcon MoonPhase="@MoonPhase" />
 }
 

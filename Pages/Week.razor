@@ -1,0 +1,36 @@
+﻿@page "/week"
+@using MoonCycle.Utils
+@using MoonCycle.Components
+@using MoonCycle.Enums
+@using MoonCycle.Models
+
+<h1>Weekly Summary</h1>
+
+@for (int i = 0; i < week.Length; i++)
+{
+	<MoonPhaseIcon MoonPhase="week[i].MoonPhase" />
+	@if (i == 0)
+	{
+		<b>
+			<p>@week[i].date.ToString("ddd")</p>
+		</b>
+	} else	{
+		<p>@week[i].date.ToString("ddd")</p>
+	}
+	<p>@MoonphaseUtils.GetMoonPhaseString(week[i].MoonPhase)</p>
+}
+
+@code {
+	private MoonPhaseDate[] week = new MoonPhaseDate[5];
+
+	protected override void OnInitialized()
+	{
+		var lookAheadDays = 5;
+		for (var i = 0; i < lookAheadDays; i++)
+		{
+			var phase = MoonphaseUtils.GetMoonPhase(DateTime.Now.AddDays(i));
+			var moonPhaseDate = new MoonPhaseDate(DateTime.Now.AddDays(i), phase);
+			week[i] = moonPhaseDate;
+		}
+	}
+}
